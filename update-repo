@@ -1,0 +1,9 @@
+#!/usr/bin/bash
+project=$1
+branch=$2
+cd $project
+echo 'pull branch'
+git pull origin $branch
+echo 'push branch'
+git push upstream $branch
+

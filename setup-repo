@@ -1,0 +1,10 @@
+#!/usr/bin/bash
+
+project=$1
+origin=$2
+upstream=$3
+echo 'Clonando repositorio origen'
+git clone $origin $project
+cd $project
+echo 'apuntando repositorio upstream'
+git remote add upstream $upstream
